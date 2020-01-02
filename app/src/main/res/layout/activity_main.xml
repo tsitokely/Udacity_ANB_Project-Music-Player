@@ -37,7 +37,7 @@
 
     <TextView
         style="@style/NormalText"
-        tools:text="Singer/Band" />
+        tools:text="Artist/Band" />
 
 
     <LinearLayout style="@style/BottomLinear">

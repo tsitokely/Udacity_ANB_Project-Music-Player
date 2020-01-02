@@ -6,18 +6,20 @@
     android:layout_weight="0">
 
 
-        <ImageView
-            android:id="@+id/playLayout"
+        <ImageButton
+            android:id="@+id/TitleLayoutPlay"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_play_circle_outline_48px" />
+            android:src="@drawable/ic_play_circle_outline_48px"
+            style="?android:attr/borderlessButtonStyle"/>
 
-        <ImageView
-            android:id="@+id/listLayout"
+        <ImageButton
+            android:id="@+id/TitleLayoutList"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/ic_format_list_bulleted_48px" />
+            android:src="@drawable/ic_format_list_bulleted_48px"
+            style="?android:attr/borderlessButtonStyle"/>
 
 </LinearLayout>
