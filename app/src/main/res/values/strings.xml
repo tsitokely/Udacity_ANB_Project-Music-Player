@@ -2,15 +2,26 @@
     <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Project 4</string>
 
-    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <!-- current song text [CHAR LIMIT=20] -->
     <string name="current_song">Song</string>
 
-    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
-    <string name="category_colors">Colors</string>
 
-    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
-    <string name="category_numbers">Numbers</string>
 
-    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="category_family">Family Members</string>
+    <!-- default background description [CHAR LIMIT=20] -->
+    <string name="desc_default_background">Default background for the played song</string>
+
+    <!-- Previous song button description [CHAR LIMIT=20] -->
+    <string name="desc_previous_button">Previous song</string>
+
+    <!-- Play or Pause song description [CHAR LIMIT=20] -->
+    <string name="desc_play_button">Play or Pause</string>
+
+    <!-- Next song description [CHAR LIMIT=20] -->
+    <string name="desc_next_button">Next song</string>
+
+    <!-- default background description [CHAR LIMIT=20] -->
+    <string name="desc_main_layout">Display the current Played music</string>
+
+    <!-- default background description [CHAR LIMIT=20] -->
+    <string name="desc_title_layout">Display the list of songs</string>
 </resources>

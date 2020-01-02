@@ -25,7 +25,7 @@
 
     <ImageView
         style="@style/DefaultBackground"
-        android:contentDescription="Default background for the played song"
+        android:contentDescription="@string/desc_default_background"
         android:src="@drawable/background" />
 
     <TextView
@@ -45,18 +45,18 @@
 
         <ImageButton
             style="@style/BottomLinearButtons"
-            android:contentDescription="Previous song"
+            android:contentDescription="@string/desc_previous_button"
             android:src="@drawable/ic_shortcut_skip_previous" />
 
         <ImageButton
             android:id="@+id/MainLayoutPlay"
             style="@style/BottomLinearButtons"
-            android:contentDescription="Play or Pause"
+            android:contentDescription="@string/desc_play_button"
             android:src="@drawable/ic_shortcut_play_arrow" />
 
         <ImageButton
             style="@style/BottomLinearButtons"
-            android:contentDescription="Next song"
+            android:contentDescription="@string/desc_next_button"
             android:src="@drawable/ic_shortcut_skip_next" />
 
     </LinearLayout>
