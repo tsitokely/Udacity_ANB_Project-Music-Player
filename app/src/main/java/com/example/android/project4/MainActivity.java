@@ -1,14 +1,14 @@
 package com.example.android.project4;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.activity.ComponentActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends ComponentActivity {
+    boolean play = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,27 +19,34 @@ public class MainActivity extends AppCompatActivity {
 
         // Find different views on the layout to reference them in the java code
         // Find the Views on the title layout
-        final ImageButton titlePlay = (ImageButton) findViewById(R.id.TitleLayoutPlay);
-        final ImageButton titleList = (ImageButton) findViewById(R.id.TitleLayoutList);
+         ImageButton titleList = findViewById(R.id.TitleLayoutList);
+         final ImageButton playButton = findViewById(R.id.MainLayoutPlay);
+            playButton.setImageResource(R.drawable.ic_shortcut_play_arrow);
 
-        // Set click listeners to all buttons
-        // Set a click listener on the title layout
-        // Intent to access the main activity layout
-        titlePlay.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the TitleLayoutPlay View is clicked on.
+        // Set click listeners the main layout
+        // Intent to play.pause button
+        playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mainIntent = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(mainIntent);
+                if (play){
+                    playButton.setImageResource(R.drawable.ic_shortcut_play_arrow);
+                    play = false;
+                }
+                else{
+                    playButton.setImageResource(R.drawable.ic_shortcut_pause);
+                    play = true;
+                }
+
             }
+
         });
         // Intent to access the list activity layout
         titleList.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the TitleLayoutPlay View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent mainIntent = new Intent(MainActivity.this, SongList.class);
-                startActivity(mainIntent);
+                Intent listIntent = new Intent(MainActivity.this, SongList.class);
+                startActivity(listIntent);
+                finish();
             }
         });
 

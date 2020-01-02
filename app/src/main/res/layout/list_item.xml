@@ -5,8 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <include layout="@layout/title" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,18 +14,19 @@
 
         <ImageView
             android:id="@+id/list_song_thumbnail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0"
+            android:layout_width="36dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
             android:textAppearance="?android:attr/textAppearanceListItemSmall"
-            tools:src="@drawable/ic_format_list_bulleted_48px"
+            android:contentDescription="Thumbnail for the song"
+            tools:src=""
             android:layout_margin="10dp"
             android:layout_gravity="center_vertical"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="10"
             android:orientation="vertical">
 
             <TextView
@@ -65,8 +64,8 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="7dp"
             android:layout_marginBottom="5dp"
-            android:layout_weight="0"
+            android:layout_weight="1"
             android:textAppearance="?android:attr/textAppearanceListItemSmall"
-            tools:text="lutti" />
+            tools:text="duration" />
     </LinearLayout>
 </LinearLayout>

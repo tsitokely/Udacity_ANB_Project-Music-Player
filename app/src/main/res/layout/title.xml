@@ -9,17 +9,47 @@
         <ImageButton
             android:id="@+id/TitleLayoutPlay"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
+            android:scaleType="center"
             android:layout_weight="1"
-            android:src="@drawable/ic_play_circle_outline_48px"
+            android:src="@drawable/ic_shortcut_local_play"
+            android:contentDescription="Display the current Played music"
             style="?android:attr/borderlessButtonStyle"/>
 
         <ImageButton
             android:id="@+id/TitleLayoutList"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
+            android:scaleType="center"
             android:layout_weight="1"
+            android:layout_gravity="center"
             android:src="@drawable/ic_format_list_bulleted_48px"
+            android:contentDescription="Display the list of songs"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:scaleType="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:scaleType="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:contentDescription=""
+            style="?android:attr/borderlessButtonStyle"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:scaleType="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:contentDescription=""
             style="?android:attr/borderlessButtonStyle"/>
 
 </LinearLayout>

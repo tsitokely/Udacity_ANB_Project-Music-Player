@@ -15,29 +15,56 @@
  */
 package com.example.android.project4;
 
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.activity.ComponentActivity;
 
 import java.util.ArrayList;
 
-public class SongList extends AppCompatActivity {
+public class SongList extends ComponentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.song_list);
+        // Find different views on the layout to reference them in the java code
+        // Find the Views on the title layout
+        ImageButton titlePlay = findViewById(R.id.TitleLayoutPlay);
+
+        // Set click listeners to all buttons
+        // Set a click listener on the title layout
+        // Intent to access the main activity layout
+        titlePlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mainIntent = new Intent(SongList.this, MainActivity.class);
+                startActivity(mainIntent);
+            }
+        });
 
         //Creating arrayList of Strings
-        ArrayList<Song> songs = new ArrayList<Song>();
+        ArrayList<Song> songs = new ArrayList<>();
         songs.add(new Song(R.drawable.disc,"Song Title 1","Album 1","Artist 1","5:00"));
         songs.add(new Song(R.drawable.disc,"Song Title 2","Album 2","Artist 2","6:00"));
         songs.add(new Song(R.drawable.disc,"Song Title 3","Album 3","Artist 2","3:55"));
+        songs.add(new Song(R.drawable.disc,"Song Title 4","Album 4","Artist 1","3:55"));
+        songs.add(new Song(R.drawable.disc,"Song Title 5","Album 5","Artist 2","3:05"));
+        songs.add(new Song(R.drawable.disc,"Song Title 6","Album 6","Artist 3","2:55"));
+        songs.add(new Song(R.drawable.disc,"Song Title 7","Album 7","Artist 2","1:40"));
+        songs.add(new Song(R.drawable.disc,"Song Title 7","Album 7","Artist 2","1:40"));
+        songs.add(new Song(R.drawable.disc,"Song Title 7","Album 7","Artist 2","1:40"));
+        songs.add(new Song(R.drawable.disc,"Song Title 7","Album 7","Artist 2","1:40"));
+        songs.add(new Song(R.drawable.disc,"Song Title 7","Album 7","Artist 2","1:40"));
+        songs.add(new Song(R.drawable.disc,"Song Title 7","Album 7","Artist 2","1:40"));
 
 
         SongAdapter itemsAdapter = new SongAdapter(this, songs);
-        ListView listview = (ListView) findViewById(R.id.list);
+        ListView listview = findViewById(R.id.list);
 
         listview.setAdapter(itemsAdapter);
 
