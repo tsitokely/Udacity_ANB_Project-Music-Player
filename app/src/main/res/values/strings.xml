@@ -5,6 +5,12 @@
     <!-- current song text [CHAR LIMIT=20] -->
     <string name="current_song">Song</string>
 
+    <!-- current song text [CHAR LIMIT=20] -->
+    <string name="current_album">Album</string>
+
+    <!-- current song text [CHAR LIMIT=20] -->
+    <string name="current_artist">Artist</string>
+
 
 
     <!-- default background description [CHAR LIMIT=20] -->

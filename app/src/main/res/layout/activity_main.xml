@@ -14,13 +14,10 @@
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/tan_background"
-    android:orientation="vertical"
+    style="@style/General"
     tools:context="com.example.android.project4.MainActivity">
 
-    <include layout="@layout/title"/>
+    <include layout="@layout/title" />
 
 
     <ImageView
@@ -34,11 +31,11 @@
 
     <TextView
         style="@style/NormalText"
-        tools:text="Album" />
+        tools:text="@string/current_album" />
 
     <TextView
         style="@style/NormalText"
-        tools:text="Artist/Band" />
+        tools:text="@string/current_artist" />
 
 
     <LinearLayout style="@style/BottomLinear">

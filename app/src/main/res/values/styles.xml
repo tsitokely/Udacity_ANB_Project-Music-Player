@@ -20,6 +20,14 @@
         <item name="colorPrimaryDark">@color/primary_dark_color</item>
     </style>
 
+    <!-- General Style of activity. -->
+    <style name="General">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/tan_background</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
     <!-- Style for default background of player -->
     <style name="DefaultBackground">
         <item name="android:layout_width">match_parent</item>
@@ -28,7 +36,7 @@
         <item name="android:layout_weight">4</item>
     </style>
 
-    <!-- Style for a category of vocabulary words -->
+    <!-- Style for a special text -->
     <style name="SpecialText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -38,7 +46,7 @@
         <item name="android:textSize">@dimen/special_text</item>
         <item name="android:paddingLeft">@dimen/padding</item>
     </style>
-    <!-- Style for a category of vocabulary words -->
+    <!-- Style for a normal text -->
     <style name="NormalText">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -66,5 +74,11 @@
         <item name="android:layout_gravity">center</item>
     </style>
 
+    <!-- Style for the listview -->
+    <style name="ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
 
 </resources>
