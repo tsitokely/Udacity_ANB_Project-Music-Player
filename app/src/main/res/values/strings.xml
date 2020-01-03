@@ -11,9 +11,7 @@
     <!-- current song text [CHAR LIMIT=20] -->
     <string name="current_artist">Artist</string>
 
-
-
-    <!-- default background description [CHAR LIMIT=20] -->
+    <!-- default bg_play_view description [CHAR LIMIT=20] -->
     <string name="desc_default_background">Default background for the played song</string>
 
     <!-- Previous song button description [CHAR LIMIT=20] -->
@@ -25,9 +23,9 @@
     <!-- Next song description [CHAR LIMIT=20] -->
     <string name="desc_next_button">Next song</string>
 
-    <!-- default background description [CHAR LIMIT=20] -->
+    <!-- default bg_play_view description [CHAR LIMIT=20] -->
     <string name="desc_main_layout">Display the current Played music</string>
 
-    <!-- default background description [CHAR LIMIT=20] -->
+    <!-- default bg_play_view description [CHAR LIMIT=20] -->
     <string name="desc_title_layout">Display the list of songs</string>
 </resources>

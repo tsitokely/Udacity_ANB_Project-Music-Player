@@ -15,35 +15,39 @@
  */
 package com.example.android.project4;
 
-
 /**
  * {@link Song} represents a song object with:thumbnail, title,album,artist,duration
- *
  */
 public class Song {
-
-    /** Thumbnail attached to the song */
+    /**
+     * Thumbnail attached to the song
+     */
     private int mSongThumb;
-    /** Title of the song */
+    /**
+     * Title of the song
+     */
     private String mSongTitle;
-
-    /** Album of the song */
+    /**
+     * Album of the song
+     */
     private String mSongAlbum;
-
-    /** Album of the song */
+    /**
+     * Album of the song
+     */
     private String mArtist;
-
-    /** Album of the song */
+    /**
+     * Album of the song
+     */
     private String mDuration;
 
     /**
      * Create a new Song object.
      *
      * @param thumbnail is the thumbnail associated with the song
-     * @param title is the title of the song itself
-     * @param album is the album tied to the song
-     * @param artist is the artist performing the song
-     * @param duration is the duration of the song
+     * @param title     is the title of the song itself
+     * @param album     is the album tied to the song
+     * @param artist    is the artist performing the song
+     * @param duration  is the duration of the song
      */
     public Song(int thumbnail, String title, String album, String artist, String duration) {
         mSongThumb = thumbnail;
@@ -73,7 +77,6 @@ public class Song {
     public String getAlbum() {
         return mSongAlbum;
     }
-
 
     /**
      * Get the song artist

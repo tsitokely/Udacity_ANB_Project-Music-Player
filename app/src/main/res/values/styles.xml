@@ -28,7 +28,7 @@
         <item name="android:orientation">vertical</item>
     </style>
 
-    <!-- Style for default background of player -->
+    <!-- Style for default bg_play_view of player -->
     <style name="DefaultBackground">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

@@ -5,7 +5,6 @@
     android:orientation="horizontal"
     android:layout_weight="0">
 
-
         <ImageButton
             android:id="@+id/TitleLayoutPlay"
             android:layout_width="0dp"
@@ -44,6 +43,7 @@
             android:layout_gravity="center"
             android:contentDescription=""
             style="?android:attr/borderlessButtonStyle"/>
+
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="48dp"

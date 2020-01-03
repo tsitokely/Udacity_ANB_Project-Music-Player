@@ -19,11 +19,10 @@
 
     <include layout="@layout/title" />
 
-
     <ImageView
         style="@style/DefaultBackground"
         android:contentDescription="@string/desc_default_background"
-        android:src="@drawable/background" />
+        android:src="@drawable/bg_play_view" />
 
     <TextView
         style="@style/SpecialText"
@@ -36,7 +35,6 @@
     <TextView
         style="@style/NormalText"
         tools:text="@string/current_artist" />
-
 
     <LinearLayout style="@style/BottomLinear">
 
