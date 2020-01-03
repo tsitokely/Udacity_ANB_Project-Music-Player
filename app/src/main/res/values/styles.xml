@@ -74,7 +74,7 @@
         <item name="android:layout_gravity">center</item>
     </style>
 
-    <!-- Style for the listview -->
+    <!-- Style for the listView -->
     <style name="ListView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>

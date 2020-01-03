@@ -8,7 +8,7 @@ import android.widget.ImageButton;
 import androidx.activity.ComponentActivity;
 
 public class MainActivity extends ComponentActivity {
-    boolean play = false;
+    private boolean play = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

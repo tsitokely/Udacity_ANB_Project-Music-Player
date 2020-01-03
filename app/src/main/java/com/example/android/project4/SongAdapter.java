@@ -13,9 +13,7 @@ import androidx.annotation.NonNull;
 import java.util.ArrayList;
 
 
-public class SongAdapter extends ArrayAdapter<Song> {
-
-    private static final String LOG_TAG = SongAdapter.class.getSimpleName();
+class SongAdapter extends ArrayAdapter<Song> {
 
     /**
      * This is our own custom constructor (it doesn't mirror a superclass constructor).
@@ -55,23 +53,23 @@ public class SongAdapter extends ArrayAdapter<Song> {
         // Get the {@link AndroidFlavor} object located at this position in the list
         Song currentWord = getItem(position);
         // Find the thumbnail in the list_item.xml layout with the appropriate id
-        ImageView songThumbs = (ImageView) listItemView.findViewById(R.id.list_song_thumbnail);
+        ImageView songThumbs = listItemView.findViewById(R.id.list_song_thumbnail);
         // set the image
         songThumbs.setImageResource(currentWord.getThumbs());
         // Find the title in the list_item.xml layout with the appropriate id
-        TextView songTitle = (TextView) listItemView.findViewById(R.id.list_song_title);
+        TextView songTitle = listItemView.findViewById(R.id.list_song_title);
         // set the title
         songTitle.setText(currentWord.getTitle());
         // Find the album in the list_item.xml layout with the appropriate id
-        TextView songAlbum = (TextView) listItemView.findViewById(R.id.list_song_album);
+        TextView songAlbum = listItemView.findViewById(R.id.list_song_album);
         // set the album
         songAlbum.setText(currentWord.getAlbum());
         // Find the artist in the list_item.xml layout with the appropriate id
-        TextView songArtist = (TextView) listItemView.findViewById(R.id.list_song_artist);
+        TextView songArtist = listItemView.findViewById(R.id.list_song_artist);
         // set the artist
         songArtist.setText(currentWord.getArtist());
         // Find the duration in the list_item.xml layout with the appropriate id
-        TextView songDuration = (TextView) listItemView.findViewById(R.id.list_song_duration);
+        TextView songDuration = listItemView.findViewById(R.id.list_song_duration);
         // set the duration
         songDuration.setText(currentWord.getDuration());
         // Return the whole list item layout

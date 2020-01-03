@@ -18,27 +18,27 @@ package com.example.android.project4;
 /**
  * {@link Song} represents a song object with:thumbnail, title,album,artist,duration
  */
-public class Song {
+class Song {
     /**
      * Thumbnail attached to the song
      */
-    private int mSongThumb;
+    private final int mSongThumb;
     /**
      * Title of the song
      */
-    private String mSongTitle;
+    private final String mSongTitle;
     /**
      * Album of the song
      */
-    private String mSongAlbum;
+    private final String mSongAlbum;
     /**
      * Album of the song
      */
-    private String mArtist;
+    private final String mArtist;
     /**
      * Album of the song
      */
-    private String mDuration;
+    private final String mDuration;
 
     /**
      * Create a new Song object.
